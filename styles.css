@@ -1,0 +1,55 @@
+html body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-navigation {
+    background-color: #2C2C32;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+}
+
+.main-navigation ul li {
+    display: inline-block;
+    position: relative;
+    list-style: none;
+}
+
+.main-navigation ul li:hover a {
+    color: #fff; 
+}
+
+.main-navigation ul li a {
+    color: #9d9d9d;
+    line-height: 50px;
+    padding: 0 25px;
+    text-decoration: none;
+}
+
+.main-navigation ul li > ul {
+    display: none;
+    position: absolute;
+    background-color: #2C2C32;
+    top: 51px;
+}
+
+.main-navigation ul li > ul li{
+    line-height: 40px;
+    border-bottom: 1px solid #fff;
+    width:100%;
+    position: relative;
+}
+
+.main-navigation ul li:hover > ul {
+    display: block;
+}
+
+.main-navigation ul li ul > li > ul {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    margin-left: 1px;
+    display: none;
+}
+.main-navigation ul li > ul > li:hover > ul {
+    display: block;
+}
